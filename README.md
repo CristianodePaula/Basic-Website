@@ -1,3 +1,12 @@
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91747232/148142184-6d677d3e-5f89-481b-8b15-07baea55fb08.gif" height="280px"/>
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91747232/148141481-a4179ecd-e81a-404c-9a5b-f1bdad9445f2.gif" height="400px"/>
+</p>
+<hr>
+
 # Basic website
 
 ## 🚀 Starting
@@ -20,15 +29,9 @@ npm
 * npm install normalize.css
 * npm install react-icons --save
 * npm install --save styled-components
-* npm install ityped
+* npm install react-intersection-observer --save
 * npm install react-scroll
-
-yarn 
-* npm install normalize.css
-* yarn add react-icons
-* yarn add styled-components
-* yarn add ityped
-* yarn add react-scroll
+* npm install framer-motion
 
 ## 🛠️ Built with
 
@@ -51,3 +54,4 @@ This code is Open Source
 I thank all the teachers who helped me on this journey! 🤓
 
 
+ 

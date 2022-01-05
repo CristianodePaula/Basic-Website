@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import clients from '../img/clients.jpg'
 import { motion } from 'framer-motion' 
 import { useScroll } from '../resources/useScroll'
-import { textAnimation,  imageAnimation } from '../resources/Animations'
+import { aboutTAnimation,  aboutIAnimation } from '../resources/Animations'
 import { mobile } from '../resources/Responsive'
 
 const Container = styled.div`
@@ -41,7 +41,7 @@ export default function About (){
 
     return (
         <Container id='about' ref={element}>
-            <Text variants={textAnimation} animate={controls}>
+            <Text variants={aboutTAnimation} animate={controls}>
                 <H1>Quem Somos</H1>
                     <P>
                     A seguradora Duas Rodas tem o seguro ideal para o seu carro. 
@@ -52,6 +52,6 @@ export default function About (){
                     utilitário ou caminhão.
                     </P>
             </Text>
-                    <Img src={clients} variants={imageAnimation} animate={controls}/>
+                    <Img src={clients} variants={aboutIAnimation} animate={controls}/>
         </Container>
 )}

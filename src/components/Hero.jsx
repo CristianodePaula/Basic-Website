@@ -1,10 +1,9 @@
-import React, { useEffect, useRef }  from 'react'
+import React  from 'react'
 import styled from 'styled-components'
 import moto from '../video/moto.mp4'
-import { init } from 'ityped'
 import { motion } from 'framer-motion'
 import { useScroll } from '../resources/useScroll'
-import { heroSliderAnimation } from '../resources/Animations'
+import { heroAnimation, heroTAnimation,  textScroll } from '../resources/Animations'
 import { mobile } from '../resources/Responsive'
 
 const Container = styled.div`
@@ -31,7 +30,7 @@ const Text = styled.div`
     color: white;
     ${mobile({ top: '20%', height: '60%' })} 
 `
-const Title = styled(motion.div)`
+const Paragraph = styled(motion.div)`
     position: absolute;
     left:0;
     right:0;
@@ -40,33 +39,46 @@ const Title = styled(motion.div)`
     text-shadow: 2px 2px 2px #000;
     ${mobile({ fontSize: '30px'})} 
 `
-const P = styled.p`
-    margin-top: 300px;
-    font-size: 30px;
-    text-shadow: 2px 2px 2px #f00;
+const Title = styled(motion.div)`
+    position: absolute;
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+    top: 55%;
+    right: 45%;
+`
+const TitleWrapper = styled(motion.div)`
+    height: 100%;
+    animation: ${textScroll} 10s infinite;
+`
+const TitleItem = styled.div`
+    height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px white;
     ${mobile({ fontSize: '20px'})} 
 `
 export default function Hero (){
-    /* Ityped gera passagem de texto através de Ref */
-    const textRef = useRef();
-
-    useEffect(() => {
-        init(textRef.current,{
-            showCursor: false,
-            backDelay: 1500,
-            backSpeed: 60,
-            strings: ['Trabalhamos com seguros veiculares', 'Conheça nossos serviços e preços!'],
-        })
-    },[])  
-
+   
     const[element, controls] = useScroll();
 
     return (
         <Container ref={element}>
-                <Video autoPlay loop muted src={moto}></Video>
+            <Video autoPlay loop muted src={moto}></Video>
             <Text>
-                <Title variants={heroSliderAnimation} animate={controls}>Seguradora Duas Rodas</Title>
-                <P ref={textRef}></P>
+                <Paragraph variants={heroAnimation} animate={controls}>Seguradora Duas Rodas</Paragraph>
            </Text>
+           <Title variants={heroTAnimation} animate={controls}>
+                <TitleWrapper >
+                    <TitleItem>Seguradora</TitleItem>
+                    <TitleItem>Revendedora</TitleItem>
+                    <TitleItem>Locadora</TitleItem>
+                    <TitleItem>Transportadora</TitleItem>
+                </TitleWrapper>
+            </Title>
         </Container>
 )}

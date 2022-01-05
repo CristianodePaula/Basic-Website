@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ImageMail from '../img/imageMail.jpg'
+import contacts from '../img/contacts.jpg'
 import { motion } from 'framer-motion' 
 import { useScroll } from '../resources/useScroll'
 import { contactAnimation } from '../resources/Animations'
@@ -9,7 +9,7 @@ import { mobile } from '../resources/Responsive'
 const Container = styled.div`
     position: relative;
     height: 63vh;
-    background:url(${ImageMail});
+    background:url(${contacts});
     background-size: cover;
     background-position: center;
     overflow: hidden;

@@ -4,7 +4,7 @@ import { dataSlide } from '../resources/Data'
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa'
 import { motion} from 'framer-motion'
 import { useScroll } from '../resources/useScroll'
-import { sliderAnimation, txtSlideAnimation } from '../resources/Animations'
+import  {sliderAnimation, sliderTAnimation  } from '../resources/Animations'
 import { mobile } from '../resources/Responsive'
 
 const Container = styled.div`
@@ -92,8 +92,8 @@ export default function Slider(){
                {dataSlide.map((images, index)=>(
                <div key={index}>
                 <Image src={images.imageUrl}/>  
-                <motion.h1 variants={txtSlideAnimation} animate={controls}>{images.title}</motion.h1> 
-                <motion.p variants={txtSlideAnimation} animate={controls}>{images.desc}</motion.p>
+                <motion.h1 variants={sliderTAnimation} animate={controls}>{images.title}</motion.h1> 
+                <motion.p variants={sliderTAnimation} animate={controls}>{images.desc}</motion.p>
                </div> 
             ))}   
               </Sliders>            

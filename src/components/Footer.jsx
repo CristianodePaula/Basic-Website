@@ -53,8 +53,8 @@ export default function Footer(){
     return (
         <Container ref={element}>
                 <Desc>
-                    <h1>Explorar</h1>
-                    <p>Conheça melhor a nossa página</p>
+                    <motion.h1 variants={footerTAnimation} animate={controls}>Explorar</motion.h1>
+                    <motion.p variants={footerTAnimation} animate={controls}>Conheça melhor a nossa página</motion.p>
                 </Desc>
                 <Items variants={footerBAnimation} animate={controls}>
                     <Title >Contate-nos</Title>
