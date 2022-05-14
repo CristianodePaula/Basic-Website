@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Car-Insurance/static/js/main.2d4f62f4.chunk.js",
-    "main.js.map": "/Car-Insurance/static/js/main.2d4f62f4.chunk.js.map",
+    "main.js": "/Car-Insurance/static/js/main.d37b4f0f.chunk.js",
+    "main.js.map": "/Car-Insurance/static/js/main.d37b4f0f.chunk.js.map",
     "runtime-main.js": "/Car-Insurance/static/js/runtime-main.27cc6097.js",
     "runtime-main.js.map": "/Car-Insurance/static/js/runtime-main.27cc6097.js.map",
     "static/css/2.679831fc.chunk.css": "/Car-Insurance/static/css/2.679831fc.chunk.css",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.27cc6097.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.84221de2.chunk.js",
-    "static/js/main.2d4f62f4.chunk.js"
+    "static/js/main.d37b4f0f.chunk.js"
   ]
 }
