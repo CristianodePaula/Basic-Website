@@ -1,12 +1,11 @@
 import { keyframes } from 'styled-components'
 
-/* Navbar  */
 export const navbarAnimation = {
   hidden: { y: -100, opacity: 0 },
   show: { y: 1, opacity: 1, transition: { type: 'spring', stiffness: 2000, duration: 2, delay: 0.2 } }
 }
 
-/* Hero */
+
 export const headerAnimation = {
   hidden: { y: '-30vh', opacity: 0, scale: 0 },
   show: { y: 1, opacity: 1, scale: 1, transition: { type: 'tween', duration: 3, delay: 0.5 } }
@@ -21,7 +20,8 @@ export const textScroll = keyframes`
   75% { transform: translateY(-150px) }
   100% { transform: translateY(-200px) }
 `
-/* About */
+
+
 export const aboutTAnimation = {
   hidden: { x: -100, opacity: 0 },
   show: { x: -1, opacity: 1, transition: { duration: 1, delay: 0.2 } }
@@ -31,7 +31,7 @@ export const aboutIAnimation = {
   show: { scale: 1, opacity: 1, transition: { duration: 2, delay: 0.2 } }
 }
 
-/* Slider */
+
 export const sliderAnimation = {
   hidden: { x: 50, opacity: 0 },
   show: { x: 0, opacity: 1, transition: { duration: 2, delay: 0.2 } }
@@ -42,27 +42,27 @@ export const sliderYAnimation = {
   animate: { x: 0, opacity: 1, transition: { duration: 2, delay: 0.2 } }
 }
 
-/* Adverts */
-export const advertsGAnimation = {
+
+export const cardsGAnimation = {
   hidden: {},
   show: { transition: { delay: 1, when: 'beforeChildren', staggerChildren: 0.4 } }
 }
-export const advertsCAnimation = {
+export const cardsCAnimation = {
   hidden: { y: -50, opacity: 0 },
   show: { y: 0, opacity: 1, transition: { duration: 2 } }
 }
-export const advertsIAnimation = {
+export const cardsIAnimation = {
   hidden: { y: 100, opacity: 0 },
   show: { y: 0, opacity: 1, transition: { duration: 1 } }
 }
 
-/* Contact */
+
 export const contactAnimation = {
   hidden: { x: 100, opacity: 0 },
   show: { x: 0, opacity: 1, transition: { duration: 3, delay: 0.5, type: 'spring', stiffness: 1000 } }
 }
 
-/* Footer */
+
 export const footerTAnimation = {
   hidden: { y: -20, opacity: 0 },
   show: { y: 1, opacity: 1, transition: { duration: 1, delay: 0.5 } }
