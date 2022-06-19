@@ -23,7 +23,7 @@ In this single-page project, get clean, easy-to-replicate code. Of course, the e
 
 ## 📌 Version
 
-1.0
+This repository is basically a backup. From version "font end v01" onwards there may be commits in order to improve the code.
 
 ## ✒️ Author
 
